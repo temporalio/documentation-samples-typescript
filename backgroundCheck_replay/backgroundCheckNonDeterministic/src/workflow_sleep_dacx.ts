@@ -15,7 +15,7 @@ const activities = proxyActivities<Activities>({
   startToCloseTimeout: "10 seconds",
 });
 
-export async function BackgroundCheckWorkflow(param: string): Promise<string> {
+export async function backgroundCheckWorkflow(param: string): Promise<string> {
   // Sleep for 1 minute
   log.info("Sleeping for 1 minute...");
   await sleep(60 * 1000); // sleep for 60 seconds

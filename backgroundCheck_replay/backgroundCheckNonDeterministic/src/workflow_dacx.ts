@@ -2,17 +2,14 @@ import { proxyActivities, log, sleep } from "@temporalio/workflow";
 import type * as activities from "./activities";
 
 /*
-In the following sample, we add a couple of logging statements and a Timer to the Workflow code to see how this affects the Event History.
-
-Use the `sleep()` API to cause the Workflow to sleep for a minute before the call to execute the Activity.
-
-By using Temporal's logging API, the Worker is able to suppress these log messages during replay so that log statements from the original execution aren't duplicated by the re-execution.
+One way to produce a non-deterministic error is to use a random number to determine whether to sleep inside the Workflow.
 */
 
 const { ssnTraceActivity } = proxyActivities<typeof activities>({
   startToCloseTimeout: "10 seconds",
 });
 
+// backgroundCheckNonDeterministic is an anti-pattern Workflow Definition
 export async function backgroundCheckNonDeterministic(
   ssn: string
 ): Promise<string> {
@@ -39,8 +36,8 @@ function getRandomNumber(min: number, max: number) {
 
 /* @dacx
 id: non-deterministic-code-changes
-title: Testing Example NonDeterminism
+title: BackgroundCheckNonDeterministic Workflow
 label: Info node label (often becomes the anchor if node is used as a header)
-description: Longer description of the info node used in link page previews.
-lines: 1-38
+description: BackgroundCheckNonDeterministic Workflow is a non-deterministic Workflow as it uses a random number generator.
+lines: 1-35
 @dacx */
