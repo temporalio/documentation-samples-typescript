@@ -41,5 +41,5 @@ id: non-deterministic-code-changes
 title: BackgroundCheckNonDeterministic Workflow
 label: intrinsic-non-deterministic-logic
 description: BackgroundCheckNonDeterministic Workflow is a non-deterministic Workflow as it uses a random number generator.
-lines: 1-35
+lines: 1-37
 @dacx */
