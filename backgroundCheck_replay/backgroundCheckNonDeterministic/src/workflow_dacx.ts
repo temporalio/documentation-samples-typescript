@@ -3,6 +3,8 @@ import type * as activities from "./activities";
 
 /*
 One way to produce a non-deterministic error is to use a random number to determine whether to sleep inside the Workflow.
+
+If you run the `BackgroundCheckNonDeterministic` Workflow enough times, eventually you will see a Workflow Task failure.
 */
 
 const { ssnTraceActivity } = proxyActivities<typeof activities>({
@@ -37,7 +39,7 @@ function getRandomNumber(min: number, max: number) {
 /* @dacx
 id: non-deterministic-code-changes
 title: BackgroundCheckNonDeterministic Workflow
-label: Info node label (often becomes the anchor if node is used as a header)
+label: intrinsic-non-deterministic-logic
 description: BackgroundCheckNonDeterministic Workflow is a non-deterministic Workflow as it uses a random number generator.
 lines: 1-35
 @dacx */
