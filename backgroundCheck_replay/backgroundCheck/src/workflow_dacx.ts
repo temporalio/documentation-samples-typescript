@@ -1,7 +1,7 @@
 
 import { log } from "@temporalio/workflow";
 import { proxyActivities, sleep } from "@temporalio/workflow";
-import type * as activities from "./activities"; // Assuming 'activities' is the file containing your activity definitions
+import type * as activities from "./activities";
 
 /*
 In the following sample, we add a couple of logging statements and a Timer to the Workflow code to see how this affects the Event History.
@@ -18,13 +18,11 @@ const { ssnTraceActivity } = proxyActivities<typeof activities>({
 export async function backgroundCheckWorkflow(param: string): Promise<string> {
   // Sleep for 1 minute
   log.info("Sleeping for 1 minute...");
-  await sleep(60 * 1000); // sleep for 60 seconds
+  await sleep("1 minutes");
   log.info("Finished sleeping");
 
-  // Execute the SSNTraceActivity synchronously
   try {
     const ssnTraceResult = await ssnTraceActivity(param);
-    // Return the result of the Workflow
     return ssnTraceResult;
   } catch (err) {
     throw err;
@@ -36,5 +34,5 @@ id: add-sleep-for-one-minute
 title: Workflow Sleep Sample
 label: Info node label (often becomes the anchor if node is used as a header)
 description: Longer description of the info node used in link page previews.
-lines: 1-32
+lines: 1-30
 @dacx */

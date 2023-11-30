@@ -1,7 +1,7 @@
 import { Connection, WorkflowClient } from "@temporalio/client";
 import { nanoid } from "nanoid";
 
-import { backgroundCheckNonDeterministic } from "./workflow";
+import { backgroundCheckNonDeterministic } from "./workflow_dacx";
 import { BACKGROUND_CHECK_TASK_QUEUE } from "./shared";
 
 async function run() {
@@ -48,7 +48,7 @@ async function run() {
   );
 
   console.log(
-    `Started workflow456 ${backgroundCheckNonDeterministicHandle.workflowId}`
+    `Started workflow ${backgroundCheckNonDeterministicHandle.workflowId}`
   );
 
   // optional: wait for client result

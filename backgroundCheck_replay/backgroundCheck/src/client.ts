@@ -1,7 +1,7 @@
 import { Connection, WorkflowClient } from "@temporalio/client";
 import { nanoid } from "nanoid";
 
-import { backgroundCheck } from "./workflow";
+import { backgroundCheckWorkflow } from "./workflow_dacx";
 import { BACKGROUND_CHECK_TASK_QUEUE } from "./shared";
 
 async function run() {
@@ -18,7 +18,7 @@ async function run() {
     // namespace: 'foo.bar', // connects to 'default' namespace if not specified
   });
 
-  const backgroundCheckHandle = await client.start(backgroundCheck, {
+  const backgroundCheckHandle = await client.start(backgroundCheckWorkflow, {
     // type inference works! args: [name: string]
     args: ["555-55-5555"],
     taskQueue: BACKGROUND_CHECK_TASK_QUEUE,
