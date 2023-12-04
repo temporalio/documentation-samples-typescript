@@ -3,7 +3,7 @@
 **How to add a Testing Framework and Tests for the Workflow and Activity.**
 
 Each Temporal SDK has a testing suite that can be used in conjunction with a typical language specific testing framework.
-In the TypeScript SDK, you'll use the Mocha library to write your tests, and the `@temporalio/testing` package to access
+In the TypeScript SDK, you'll use the [Mocha](https://mochajs.org/) library to write your tests, and the `@temporalio/testing` package to access
 helpers to test Workflows and Activities.
 
 /*
@@ -75,6 +75,18 @@ and a Task Queue name.
 */
 
 /* @dacx
+id: backgroundcheck-boilerplate-add-test-framework
+title: Add a testing framework
+description: How to add a testing framework to your Temporal Application.
+label: Test framework
+tags:
+- testing
+- developer guide
+- typescript sdk
+lines: 3-7
+@dacx */
+
+/* @dacx
 id: backgroundcheck-boilerplate-add-workflow-tests
 title: Add Workflow function tests
 description: How to test Workflow code
@@ -83,7 +95,7 @@ tags:
 - testing
 - developer guide
 - go sdk
-lines: 1-60
+lines: 8-60
 @dacx */
 
 /* @dacx
