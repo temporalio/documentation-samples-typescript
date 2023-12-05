@@ -2,6 +2,8 @@
 /*
 In the Temporal TypeScript SDK programming model, a [Workflow Definition](/concepts/what-is-a-workflow-definition) is an exportable function.
 
+Open the `src/workflows.ts` file in your editor. You'll place your Workflow Definition in this file.
+
 To define a Workflow, import the Activity types and the `@temporalio/workflow` libraries:
 */
 
@@ -19,6 +21,7 @@ const { ssnTrace } = workflow.proxyActivities<typeof activities>({
 /*
 The `backgroundCheck` function that follows is an example of a basic Workflow Definition.
 */
+
 export async function backgroundCheck(ssn: string): Promise<string> {
   return await ssnTrace(ssn);
 }
@@ -39,7 +42,6 @@ To return a value of the Workflow function, use `Promise<something>`. The
 Promise is used to make asynchronous calls and comes with guarantees.
 */
 
-
 /* @dacx
 id: backgroundcheck-boilerplate-backgroundcheck-workflow
 title: Boilerplate Workflow code
@@ -50,7 +52,7 @@ tags:
 - developer guide
 - workflow
 - code sample
-lines: 1-24
+lines: 2-27
 @dacx */
 
 /* @dacx
@@ -62,5 +64,5 @@ tags:
 - typescript sdk
 - workflow
 - developer guide
-lines: 27-39
+lines: 29-43
 @dacx */

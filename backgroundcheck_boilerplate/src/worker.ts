@@ -8,6 +8,8 @@ To run a Worker Process with a local development server, define the following st
 - Call `run()` on the Worker.
 
 In regards to organization, we recommend keeping Worker code separate from Workflow and Activity code.
+
+Add the following code to `src/worker.ts` to define a worker process that communicates with a local development server:
 */
 import { NativeConnection, Worker } from '@temporalio/worker';
 import * as activities from './activities';
@@ -53,7 +55,7 @@ id: backgroundcheck-boilerplate-run-a-dev-server-worker
 title: Run a dev server Worker
 description: Define the code needed to run a Worker Process in TypeScript that talks to your local dev cluster.
 label: Dev server Worker
-lines: 1-49
+lines: 2-51
 tags:
 - typescript sdk
 - worker

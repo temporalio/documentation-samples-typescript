@@ -6,8 +6,8 @@ You can test Activity code for the following conditions:
 - Error when checking for the result of the Activity Execution.
 - Activity return values. Check to ensure the return value is expected.
 
-The following code, in `src/mocha/ssntrace.test.ts` tests the `ssnTrace`
-Activity and ensures it returns the expected value:
+Add the following code to `src/mocha/ssntrace.test.ts` to test the `ssnTrace`
+Activity and ensure it returns the expected value:
 
 */
 import { MockActivityEnvironment } from '@temporalio/testing';

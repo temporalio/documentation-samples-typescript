@@ -1,6 +1,8 @@
 /* dacx */
 /*
 To use a Worker with a self-hosted Temporal Cluster, set the IP address, port, and Namespace in the Temporal Client options.
+
+Add the following code to `src/worker.ts` to define a worker process that communicates with a self-hosted Temporal cluster using a specific namespace and IP address:
 */
 import { NativeConnection, Worker } from '@temporalio/worker';
 import * as activities from './activities';
@@ -38,7 +40,7 @@ id: backgroundcheck-boilerplate-self-hosted-worker
 title: Customize Client options
 description: Configure the Temporal Client with the specific IP Address and namespace of the Temporal Server on your network.
 label: Self-hosted Client options
-lines: 1-34
+lines: 2-36
 tags:
 - typescript sdk
 - worker

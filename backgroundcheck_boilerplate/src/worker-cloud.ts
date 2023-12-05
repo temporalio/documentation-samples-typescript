@@ -5,6 +5,8 @@ A Temporal Cloud Worker requires that you specify the following in the Client co
 - Temporal Cloud Namespace
 - Temporal Cloud Address
 - Certificate and private key associated with the Namespace
+
+Add the following code to `src/worker.ts` to define a worker process that communicates with Temporal Cloud:
 */
 import fs from 'fs/promises';
 
@@ -107,7 +109,7 @@ id: backgroundcheck-boilerplate-cloud-worker
 title: Run a Temporal Cloud Worker
 description: Provide your Namespace, Address, and certificate key pair to connect to Temporal Cloud.
 label: Cloud Worker
-lines: 1-92
+lines: 2-94
 tags:
 - typescript sdk
 - worker
@@ -121,7 +123,7 @@ id: backgroundcheck-boilerplate-cloud-worker-details
 title: Cloud Worker details
 description: When specifying the Temporal Cloud Namespace, make sure to append the Account Id as it appears in the url of the Cloud UI.
 label: Cloud Worker details
-lines: 94-102
+lines: 97-106
 tags:
 - typescript sdk
 - worker

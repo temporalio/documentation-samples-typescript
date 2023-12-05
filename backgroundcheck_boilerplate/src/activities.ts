@@ -1,8 +1,10 @@
 /* dacx */
-
 /*
 In the Temporal TypeScript SDK programming model, an Activity is an exportable async function.
-The following code shows an example of an Activity defined as a function:
+
+Open `src/activities.ts` in your editor. You'll define your Activities in this file.
+
+Add the following code to define your Activity:
 */
 
 export async function ssnTrace(param: string): Promise<string> {
@@ -30,7 +32,7 @@ tags:
 - typescript sdk
 - code sample
 - activity
-lines: 3-12
+lines: 2-14
 @dacx */
 
 /* @dacx
@@ -41,5 +43,5 @@ description: In the Temporal TypeScript SDK programming model, an Activity Defin
 tags:
 - typescript sdk
 - activity
-lines: 14-22
+lines: 16-24
 @dacx */
