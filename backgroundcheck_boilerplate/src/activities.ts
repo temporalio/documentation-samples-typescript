@@ -37,7 +37,7 @@ lines: 3-12
 id: backgroundcheck-boilerplate-activity-details
 title: Boilerplate Activity code details
 label: Activity code details
-description: In the Temporal Go SDK programming model, an Activity Definition is an exportable function or a `struct` method.
+description: In the Temporal TypeScript SDK programming model, an Activity Definition is an exportable function or a `struct` method.
 tags:
 - typescript sdk
 - activity

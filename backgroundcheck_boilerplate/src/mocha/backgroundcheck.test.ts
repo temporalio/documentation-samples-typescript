@@ -5,7 +5,7 @@
 Each Temporal SDK has a testing suite that can be used in conjunction with a typical language specific testing framework.
 In the TypeScript SDK, you'll use the [Mocha](https://mochajs.org/) library to write your tests, and the `@temporalio/testing` package to access
 helpers to test Workflows and Activities.
-
+*/
 /*
 You can test Workflow code for the following conditions:
 
@@ -83,7 +83,7 @@ tags:
 - testing
 - developer guide
 - typescript sdk
-lines: 3-7
+lines: 2-8
 @dacx */
 
 /* @dacx
@@ -95,7 +95,7 @@ tags:
 - testing
 - developer guide
 - go sdk
-lines: 8-60
+lines: 9-60
 @dacx */
 
 /* @dacx
@@ -107,5 +107,5 @@ tags:
 - testing
 - developer guide
 - go sdk
-lines: 63-77
+lines: 62-75
 @dacx */
