@@ -8,7 +8,7 @@ A Temporal Cloud Worker requires that you specify the following in the Client co
 
 
 Add the following code to `src/worker.ts` to define a worker process that communicates with Temporal Cloud using an mTLS connection, using
-configuration provided via environment variables.
+configuration provided via environment variables:
 */
 import fs from 'fs/promises';
 
@@ -121,7 +121,7 @@ id: backgroundcheck-boilerplate-cloud-worker-details
 title: Cloud Worker details
 description: When specifying the Temporal Cloud Namespace, make sure to append the Account Id as it appears in the url of the Cloud UI.
 label: Cloud Worker details
-lines: 96-106
+lines: 94-103
 tags:
 - typescript sdk
 - worker
