@@ -1,0 +1,2 @@
+[workspace]
+members = ["core", "client", "core-api", "fsm", "test-utils", "sdk-core-protos", "sdk"]
