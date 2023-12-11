@@ -23,7 +23,7 @@ async function run() {
   });
   console.log(`Started workflow ${handle.workflowId}`);
 
-  console.log(await handle.result()); // Hello, Temporal!
+  console.log(await handle.result()); // pass
 }
 
 run().catch((err) => {

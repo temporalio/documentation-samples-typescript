@@ -10,7 +10,6 @@ helpers to test Workflows and Activities.
 You can test Workflow code for the following conditions:
 
 - Workflow status. For example, did the Workflow reach a completed status?
-- Workflow returned an error. Did the Workflow function return an error?
 - Error when checking for a result of a Workflow. Is there an error in getting the result returned by the Workflow?
 - Workflow return value. If the Workflow did return something other than an error, is it what you expected it to be?
 
@@ -64,7 +63,7 @@ This test uses a local testing server that ships with the Temporal TypeScript SD
 This server becomes the environment that runs the Worker. This example uses the `before` and `after` hooks
 to set up and tear down the test environment.
 
-In the body of the test case, you create an instance of a Worker and specify the Workflow and Activities.
+In the body of the test case, you create an instance of a Worker and register the Workflow and Activities.
 In this example, the Activity is mocked out and replaced with a function that returns a specific result..
 This ensures that the Workflow test doesn't invoke the actual Activity.
 
@@ -94,7 +93,7 @@ label: Test Workflow code
 tags:
 - testing
 - developer guide
-- go sdk
+- typescript sdk
 lines: 9-60
 @dacx */
 
@@ -106,6 +105,6 @@ label: Test Workflow code details
 tags:
 - testing
 - developer guide
-- go sdk
+- typescript sdk
 lines: 62-75
 @dacx */

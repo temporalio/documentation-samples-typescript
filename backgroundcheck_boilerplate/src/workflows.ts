@@ -46,7 +46,7 @@ Promise is used to make asynchronous calls and comes with guarantees.
 id: backgroundcheck-boilerplate-backgroundcheck-workflow
 title: Boilerplate Workflow code
 label: Workflow code
-description: In the Temporal Go SDK programming model, an Activity Definition is an exportable function or a `struct` method.
+description: In the Temporal TypeScript SDK programming model, an Activity Definition is an exportable function or an `object` method.
 tags:
 - typescript sdk
 - developer guide

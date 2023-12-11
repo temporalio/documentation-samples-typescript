@@ -2,7 +2,7 @@
 /*
 In the Temporal TypeScript SDK programming model, an Activity is an exportable async function.
 
-Open `src/activities.ts` in your editor. You'll define your Activities in this file.
+You'll define your Activities in this file.
 
 Add the following code to define your Activity:
 */
@@ -39,7 +39,7 @@ lines: 2-14
 id: backgroundcheck-boilerplate-activity-details
 title: Boilerplate Activity code details
 label: Activity code details
-description: In the Temporal TypeScript SDK programming model, an Activity Definition is an exportable function or a `struct` method.
+description: In the Temporal TypeScript SDK programming model, an Activity Definition is an exportable function or an `object` method.
 tags:
 - typescript sdk
 - activity

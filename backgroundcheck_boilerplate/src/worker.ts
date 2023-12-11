@@ -2,7 +2,7 @@
 /*
 To run a Worker Process with a local development server, define the following steps in code:
 
-- Initialize a connection with the Temporal server..
+- Initialize a connection with the Temporal server.
 - Create a new Worker by passing the Client to creation call.
 - Register the application's Workflow and Activity functions.
 - Call `run()` on the Worker.
@@ -34,7 +34,7 @@ async function run() {
     activities,
   });
 
-  // Step 3: Start accepting tasks on the `hello-world` queue
+  // Step 3: Start accepting tasks on the `background-check` queue
   //
   // The worker runs until it encounters an unexepected error or the process receives a shutdown signal registered on
   // the SDK Runtime object.
