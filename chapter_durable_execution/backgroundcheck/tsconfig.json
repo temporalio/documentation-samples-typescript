@@ -7,8 +7,8 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "rootDir": "./src",
+    "rootDir": "backgroundcheck/src",
     "outDir": "./lib"
   },
-  "include": ["src/**/*.ts"]
+  "include": ["backgroundcheck/src/**/*.ts"]
 }

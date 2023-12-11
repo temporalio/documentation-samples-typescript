@@ -10,7 +10,7 @@ Add the following code to define your Activity:
 export async function ssnTrace(param: string): Promise<string> {
   // This is where a call to another service is made
   // Here we are pretending that the service that does SSNTrace returned "pass"
-  return "pass";
+  return 'pass';
 }
 
 /*
