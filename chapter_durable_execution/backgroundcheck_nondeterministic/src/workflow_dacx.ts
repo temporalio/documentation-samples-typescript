@@ -37,7 +37,7 @@ function getRandomNumber(min: number, max: number) {
 }
 
 /* @dacx
-id: non-deterministic-code-changes
+id: intrinsic-non-deterministic-logic-example
 title: BackgroundCheckNonDeterministic Workflow
 label: intrinsic-non-deterministic-logic
 description: BackgroundCheckNonDeterministic Workflow is a non-deterministic Workflow as it uses a random number generator.
