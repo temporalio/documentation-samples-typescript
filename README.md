@@ -1,4 +1,13 @@
+
 # Code Repository for Temporal Documentation Samples in TypeScript
+
+**Warning - deprecated**
+
+This repository is now deprecated.
+
+All relevant sample code has moved into the [temporalio/documentation](https://github.com/temporalio/documentation) repo.
+
+--- 
 
 This repository provides code used for samples in the [TypeScript Developer's Guide](https://docs.temporal.io/dev-guide/typescript).
 
